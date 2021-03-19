@@ -1,0 +1,24 @@
+GET http://localhost:3000/djs
+
+##########
+
+POST http://localhost:3000/djs
+Content-Type: application/json
+
+{
+  "nome": "Vegas"
+}
+
+####
+
+GET http://localhost:3000/djs/804bfc43-6d20-43d4-8622-1fa55f243fbc
+
+####
+
+PUT http://localhost:3000/djs/188d30b3-cbdf-4653-9f43-fa97557ada41
+Content-Type: application/json
+
+{
+  "noe": "Menumas"
+}
+
