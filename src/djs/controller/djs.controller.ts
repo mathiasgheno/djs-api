@@ -25,7 +25,7 @@ export class DjsController {
   @Post()
   criarDJ(@Body() body: CriarDjDto) {
     const dj = {
-      id: uuidv4(),
+      // id: uuidv4(),
       musicas: body.musicas,
       nome: body.nome,
     };
@@ -34,8 +34,7 @@ export class DjsController {
 
   @Get()
   buscarDJs(@Query('pagina') pagina, @Query('limite') limite) {
-    const djs = this.djsService.listar();
-    return { djs };
+    return this.djsService.listar();
   }
 
   @Put('/:id')
@@ -44,8 +43,8 @@ export class DjsController {
     return { dj: djAtualizado };
   }
 
-  @Delete('/id')
+  @Delete('/:id')
   deletarDj(@Param('id') id) {
-    this.djsService.deletar(id);
+    return this.djsService.deletar(id);
   }
 }

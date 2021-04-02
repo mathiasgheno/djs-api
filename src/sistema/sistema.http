@@ -1,0 +1,19 @@
+POST localhost:3000/sistema
+Content-Type: application/json
+
+{
+  "nome": "NPI",
+  "cooperativa": "566"
+}
+
+#####
+
+GET localhost:3000/sistema/ddc58759-8204-406d-a079-c326f496e4c0
+
+#####
+
+DELETE localhost:3000/sistema/ddc58759-8204-406d-a079-c326f496e4c0
+
+#####
+
+GET localhost:3000/sistema

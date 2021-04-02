@@ -1,0 +1,20 @@
+POST localhost:3000/features
+Content-Type: application/json
+
+{
+  "nome": "LISTAR_TITULOS",
+  "sistema": "7b315386-c638-460e-bcea-1b72ce0988a4",
+  "habilitado": true
+}
+
+###
+
+GET localhost:3000/features/d76efbc4-24a1-43fe-a45f-b87ff52733c3
+
+###
+
+DELETE localhost:3000/features/b243559f-ddf9-4eb7-a740-674ece41cec7
+
+####
+
+GET localhost:3000/features/
