@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
-import { FeatureService } from '../../service/feature/feature.service';
-import { FeatureDto } from '../../dto/feature.dto';
+import { FeatureService } from '../service/feature.service';
+import { FeatureDto } from '../dto/feature.dto';
 
 @Controller('features')
 export class FeaturesController {

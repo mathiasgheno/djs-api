@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
-import { SistemaService } from '../../service/sistema/sistema.service';
-import { CriarSistemaDto } from '../../dto/criar-sistema.dto';
+import { SistemaService } from '../service/sistema.service';
+import { CriarSistemaDto } from '../dto/criar-sistema.dto';
 
 @Controller('sistema')
 export class SistemaController {

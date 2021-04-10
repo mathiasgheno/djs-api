@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectEntityManager, InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { FeaturesEntity } from '../../entity/features.entity';
+import { FeaturesEntity } from '../entity/features.entity';
 
 @Injectable()
 export class FeatureService {
